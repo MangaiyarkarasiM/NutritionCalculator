@@ -63,11 +63,11 @@ function calculateNutritions(data,gram){
   
   
   div2.innerHTML = `By eating ${gram}g of ${data.name} you have consumed,`;
-  li1.innerHTML = `Carbohydrates: ${carbohydrates}g`;
-  li2.innerHTML = `Protein: ${protein}g`;
-  li3.innerHTML = `Fat: ${fat}g`;
-  li4.innerHTML = `Calories: ${calories} Cal`;
-  li5.innerHTML = `Sugar: ${sugar}g`;
+  li1.innerHTML = `${carbohydrates}g of Carbohydrates`;
+  li2.innerHTML = `${protein}g of Protein`;
+  li3.innerHTML = `${fat}g of Fat`;
+  li4.innerHTML = `${calories}Cal of Calories`;
+  li5.innerHTML = `${sugar}g of Sugar`;
   
   div.appendChild(div2);
   ul.appendChild(li1);
