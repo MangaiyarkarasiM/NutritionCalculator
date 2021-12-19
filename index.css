@@ -1,0 +1,20 @@
+body{
+    margin: 10px;
+    background-color: whitesmoke;
+}
+
+.nutrition{
+    display: inline-flexbox;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+.fname,.gram{
+    padding: 5px 0px;
+}
+
+li,ul{
+    margin-left: 30px;
+    padding: 5px 0px;
+}
