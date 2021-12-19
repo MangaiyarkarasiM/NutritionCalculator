@@ -62,7 +62,7 @@ function calculateNutritions(data,gram){
   console.log(carbohydrates,protein,fat,calories,sugar)
   
   
-  div2.innerHTML = `You have consumed,`;
+  div2.innerHTML = `By eating ${gram}g of ${data.name} you have consumed,`;
   li1.innerHTML = `Carbohydrates: ${carbohydrates}g`;
   li2.innerHTML = `Protein: ${protein}g`;
   li3.innerHTML = `Fat: ${fat}g`;
