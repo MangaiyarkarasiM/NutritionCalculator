@@ -36,8 +36,6 @@ async function getData(type){
         }
         });
         data = await response.json();
-        
-        //console.log(data);
       } catch (error) {
         console.log(error);
       }
@@ -84,17 +82,18 @@ async function getNutritions(){
  const fname=selectoptions.value;
  const gram=parseInt(grams.value);
  console.log(gram,typeof(gram));
- if(fname==='--Select--'){
+ if(fname==='--select--'){
    alert("Please select the fruit")
+   div.innerHTML = '';
  }
  else if( typeof(gram) !== 'number' || isNaN(gram)){
    alert(`Please enter the valid input for 'Fruit consumed'`)
+   div.innerHTML = '';
  }
  else{
     try {
       const data = await getData(fname);
       calculateNutritions(data,gram);
-      //console.log(data);
     } catch (error) {
       console.log(error);
     }
